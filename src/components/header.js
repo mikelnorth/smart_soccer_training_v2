@@ -7,12 +7,14 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
     }}
   >
+
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -28,6 +30,34 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+
+    <nav
+      style={{
+        display: 'flex',
+        width: 'fit-content',
+        padding: `1.45rem 1.0875rem`,
+      }}
+    >
+      <Link to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginRight: '.5vw'
+        }}
+      >
+        Home
+      </Link>
+
+      <Link to="/page-2"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginRight: '.5vw'
+        }}
+      >
+        Page-2
+      </Link>
+    </nav>
   </header>
 )
 
